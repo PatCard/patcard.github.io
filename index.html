@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Estas líneas permiten a la página cargar una fuente específica desde la biblioteca de fuentes de Google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Martel:wght@700&display=swap" rel="stylesheet">    
+
+    <script src="./js/time.js"></script>
+    <script src="./js/aviso.js"></script>
+    <title>Periodico El Faro</title>
+    <!--Con la etiqueta link se referencia a la ubicacion del icono de la pagina web en ele navegador -->
+	<link rel="shortcut icon" href="./images/faro.ico" type="image/x-icon">	    
+    <!--Se indica al navegador la ubicacion del archivo de estilos-->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <div class="container"> <!-- Header -->
+            <div class="row"> <!-- Fecha y hora -->
+                <div class="col">
+                    <div id="date-time"></div>
+                </div>
+            </div>
+
+            <div class="row"> <!-- Logo -->
+                <div class="col-4">
+
+                </div>
+                <div class="col-4">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="./images/logo-faro2.png" alt="Logo del periódico" style="max-width: 100%;">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-4">
+
+                </div>
+            </div>
+
+            <div class="row"> <!-- Aviso -->
+                <div class="col" id="aviso">
+                    <img src="./images/aviso1.png" alt="Aviso" style="max-width: 100%;" id="aviso-img">
+                </div>
+            </div>
+
+            <div class="row"> <!-- Menu -->
+                <div class="col-lg-1 col-sm-12">
+                    <a class="linkmenu" href="#"><b>INICIO</b></a>
+                </div>
+                <div class="col-lg-1 col-sm-12">
+                    <a class="linkmenu" href="deporte.html">DEPORTE</a>
+                </div>
+                <div class="col-lg-1 col-sm-12">
+                    <a class="linkmenu" href="negocios.html">NEGOCIOS</a>
+                </div>
+
+                <div class="col-lg-9">
+
+                </div>
+            </div>
+
+            <div class="row"> <!-- Seccion separada -->
+                <div class="col-lg-11 col-sm-10">
+                </div>
+                <div class="col-lg-1 col-sm-2" id="opinion">
+                    <a class="linkmenu" id="sec2" href="https://www.df.cl/opinion/columnistas">OPINIONES </a>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <main>
+        <div class="container"> 
+            <div class="row">
+                <div class="col-lg-9">
+                    <div class="row" id="reciente"> <!--Fila1 Col 1-->
+                        <div class="col">
+                            <div class="row"> <!-- fila1 de img not reciente-->
+                                <div class="col">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="categoria">Nacional:</div>
+                                            <img src="./images/inicio1.png" class="img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row"> <!-- fila1 de img not reciente-->
+                                <div class="col">
+                                    <div class="card">
+                                        <div class="card-body">
+                                        <!-- Contenido de la celda de noticia reciente -->
+                                            <div class="noticia">
+                                                <a  id="txtRec" href="https://www.biobiochile.cl/noticias/economia/tu-bolsillo/2023/04/24/crisis-del-arroz-con-huevo-advierten-escasez-mundial-del-cereal-e-impacto-de-la-influenza-aviar.shtml">
+                                                    <div class="titulo">Crisis del arroz con huevo</div>
+                                                    <div class="texto">Por un lado, la autoridad chilena admite que la influenza aviar ha generado una menor oferta de huevo en el país. Sin embargo, aseguran que la crisis mundial del arroz no golpeará tanto a Chile, puesto que la disponibilidad está cubierta con la producción nacional.</div>
+                                                    <hr size="2" width="80%" color="blue">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row" id="antigua-1"><!--Fila2 Col 1-->
+                        <div class="col-lg-6 col-sm-12">
+                            <div class="row"> <!-- fila2 de img not reciente-->
+                                <div class="col">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="categoria">Nacional:</div>
+                                            <img src="./images/inicio2.png" class="img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row"> <!-- fila2 de img not reciente-->
+                                <div class="col">
+                                    <div class="card">
+                                        <div class="card-body">
+                                        <!-- Contenido de la celda de noticia reciente -->
+                                            <div class="noticia">
+                                                <a  id="txtAnt" href="https://www.biobiochile.cl/noticias/nacional/chile/2023/04/24/difunden-nombre-de-las-3-mujeres-chilenas-finalistas-en-la-carrera-por-tener-un-billete-conmemorativo.shtml">
+                                                    <div class="titulo">3 mujeres chilenas finalistas en carrera por tener "billete"</div>
+                                                    <div class="texto">Las tres finalistas de este proceso son Margot Duhalde, Violeta Parra y Eloísa Díaz. En la carrera quedaron seis mujeres que también postulaban para tener un billete conmemorativo, entre ellas, la expresidenta Michelle Bachelet.</div>
+                                                    <hr size="2" width="80%" color="blue">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-12">
+                            <div class="row"> <!-- fila2 de img not reciente-->
+                                <div class="col">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="categoria">Nacional:</div>
+                                            <img src="./images/inicio3.png" class="img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row"> <!-- fila2 de img not reciente-->
+                                <div class="col">
+                                    <div class="card">
+                                        <div class="card-body">
+                                        <!-- Contenido de la celda de noticia reciente -->
+                                            <div class="noticia">
+                                                <a  id="txtAnt" href="https://www.biobiochile.cl/noticias/nacional/chile/2023/04/24/difunden-nombre-de-las-3-mujeres-chilenas-finalistas-en-la-carrera-por-tener-un-billete-conmemorativo.shtml">
+                                                    <div class="titulo">Gripe aviar</div>
+                                                    <div class="texto">Esta mañana se realizó una nueva reunión de la mesa técnica de coordinación entre el sector público y privado por la influenza aviar, en la que participaron el Ministerio de Agricultura, el Senapred y el Servicio Agrícola y Ganadero (SAG). Autoridades señalaron que la influenza aviar está "técnicamente" erradicada en la industria de carnes blancas, pero mostraron preocupación por el alza en los casos de aves de traspatio.</div>
+                                                    <hr size="2" width="80%" color="blue">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row" id="antigua-2"><!--Fila3 Col 1-->
+                        <div class="col-lg-6 col-sm-12">
+                            <div class="row"> <!-- fila3 de img not reciente-->
+                                <div class="col">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="categoria">Nacional:</div>
+                                            <img src="./images/inicio4.png" class="img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row"> <!-- fila3 de img not reciente-->
+                                <div class="col">
+                                    <div class="card">
+                                        <div class="card-body">
+                                        <!-- Contenido de la celda de noticia reciente -->
+                                            <div class="noticia">
+                                                <a  id="txtAnt" href="https://www.biobiochile.cl/noticias/economia/tu-bolsillo/2023/04/24/wom-y-zapping-se-unen-en-alianza-estrategica-asi-beneficia-a-los-clientes.shtml">
+                                                    <div class="titulo">WOM y Zapping se unen en alianza estratégica: así beneficia a los clientes</div>
+                                                    <div class="texto">Esta alianza generará ventajas competitivas para ambas compañías. Por un lado, la operadora ampliará su oferta al triple de canales, contenido exclusivo y modernas funcionalidades. Mientras que, para Zapping, esto impactará directamente en el crecimiento de su base de usuarios y una mayor cobertura de su servicio.</div>
+                                                    <hr size="2" width="80%" color="blue">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-12">
+                            <div class="row"> <!-- fila3 de img not reciente-->
+                                <div class="col">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="categoria">Nacional:</div>
+                                            <img src="./images/inicio5.png" class="img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row"> <!-- fila3 de img not reciente-->
+                                <div class="col">
+                                    <div class="card">
+                                        <div class="card-body">
+                                        <!-- Contenido de la celda de noticia reciente -->
+                                            <div class="noticia">
+                                                <a  id="txtAnt" href="https://www.biobiochile.cl/noticias/nacional/region-de-magallanes/2023/04/25/agricultora-de-indap-cosecho-la-primera-produccion-de-quinua-bajo-invernadero-en-puerto-natales.shtml">
+                                                    <div class="titulo">Agricultora de Indap cosechó la primera producción de quinua bajo invernadero en Puerto Natales</div>
+                                                    <div class="texto">La mujer se convirtió en la primera persona en cosechar quinua bajo invernadero en Puerto Natales. Julia Muñoz ha incursionado en diferentes ámbitos de la agricultura, de hecho, también destaca por ser la primera en la zona en crear un sistema de mesas para el cultivo de frutillas con riego tecnificado.</div>
+                                                    <hr size="2" width="80%" color="blue">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="col-lg-3"><!--Fila2 Col 1-->
+                    <div class="row" id="antigua-3">
+                        <div class="col">
+                            <div class="row"> <!-- fila2 de img not reciente-->
+                                <div class="col">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="categoria">Policial:</div>
+                                            <video controls height="300">
+                                                <source src="./video/Vitacura se querella contra chofer que hizo maniobra frente a Carabineros durante carrera clandestina 2023-03-29 13_00.mp4" type="video/mp4">
+                                                <source src="./video/Vitacura se querella contra chofer que hizo maniobra frente a Carabineros durante carrera clandestina 2023-03-29 13_00.webn" type="video/webm">
+                                                <p>Su navegador no soporta video HTML5. Aquí hay un <a href="./video/Vitacura se querella contra chofer que hizo maniobra frente a Carabineros durante carrera clandestina 2023-03-29 13_00.mp4" type="video/mp4">enlace al video</a>.</p>
+                                            </video>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row"> <!-- fila2 de img not reciente-->
+                                <div class="col">
+                                    <div class="card">
+                                        <div class="card-body">
+                                        <!-- Contenido de la celda de noticia reciente -->
+                                            <div class="noticia">
+                                                <a  id="txtAnt" href="https://www.biobiochile.cl/noticias/nacional/region-metropolitana/2023/03/28/graban-y-detienen-a-conductor-tras-creerse-toretto-frente-a-carabineros-vitacura-se-querello.shtml">
+                                                    <div class="titulo">Graban y detienen a conductor tras creerse "Toretto" frente a Carabineros: Vitacura se querelló</div>
+                                                    <hr size="2" width="80%" color="blue">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+
+                    <div class="row" id="antigua-4">
+                        <div class="col">
+                            <div class="row"> <!-- fila2 de img not reciente-->
+                                <div class="col">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="categoria">Nacional:</div>
+                                            <audio controls>
+                                                <source src="./audio/delegada-ruta-metropolitana-1.mp3" type="audio/mp3">
+                                                <source src="./audio/delegada-ruta-metropolitana-1.ogg" type="audio/ogg">
+                                                <p>Your browser doesn't support HTML5 audio. Here is a <a href="./audio/delegada-ruta-metropolitana-1.mp3">link to
+                                            the audio</a> instead.</p>
+                                            </audio>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row"> <!-- fila2 de img not reciente-->
+                                <div class="col">
+                                    <div class="card">
+                                        <div class="card-body">
+                                        <!-- Contenido de la celda de noticia reciente -->
+                                            <div class="noticia">
+                                                <a  id="txtAnt" href="https://www.biobiochile.cl/noticias/nacional/region-de-los-lagos/2023/03/29/gobierno-descarta-relacion-entre-proyectos-de-ruta-metropolitana-e-interconexion-alerce-puerto-montt.shtml">
+                                                    <div class="titulo">Gobierno descarta relación entre proyectos de Ruta Metropolitana e interconexión Alerce-Puerto Montt</div>
+                                                    <hr size="2" width="80%" color="blue">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+
+
+        </div>
+    </main>
+
+</body>
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="row">
+                    <a href="#">Quiénes somos</a>
+                </div>
+                <div class="row">
+                    <a href="#">Contacto</a>
+                </div>
+                <div class="row">
+                    <a href="#">Derechos de Autor</a>
+                </div>
+                <div class="row">
+                    <a href="#">Políticas de privacidad</a>
+                </div>
+                <div class="row">
+                    <a href="#">Términos y condiciones de los servicios</a>
+                </div>
+                
+            </div>
+            <div class="col-lg-8">
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="copy">
+                    <p>&copy; 2023 Periódico El Faro. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+crossorigin="anonymous"></script>
+</html>
+
+
+

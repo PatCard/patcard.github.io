@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Estas líneas permiten a la página cargar una fuente específica desde la biblioteca de fuentes de Google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Martel:wght@700&display=swap" rel="stylesheet">    
+
+    <script src="./js/time.js"></script>
+    <script src="./js/aviso.js"></script>
+    <title>Periodico El Faro</title>
+    <!--Con la etiqueta link se referencia a la ubicacion del icono de la pagina web en ele navegador -->
+	<link rel="shortcut icon" href="./images/faro.ico" type="image/x-icon">	    
+    <!--Se indica al navegador la ubicacion del archivo de estilos-->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <div class="container"> <!-- Header -->
+            <div class="row"> <!-- Fecha y hora -->
+                <div class="col">
+                    <div id="date-time"></div>
+                </div>
+            </div>
+
+            <div class="row"> <!-- Logo -->
+                <div class="col-4">
+
+                </div>
+                <div class="col-4">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="./images/logo-faro2.png" alt="Logo del periódico" style="max-width: 100%;">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-4">
+
+                </div>
+            </div>
+
+            <div class="row"> <!-- Aviso -->
+                <div class="col" id="aviso">
+                    <img src="./images/aviso1.png" alt="Aviso" style="max-width: 100%;" id="aviso-img">
+                </div>
+            </div>
+
+            <div class="row"> <!-- Menu -->
+                <div class="col-lg-1 col-sm-12">
+                    <a class="linkmenu" href="./index.html">INICIO</a>
+                </div>
+                <div class="col-lg-1 col-sm-12">
+                    <a class="linkmenu" href="./deporte.html">DEPORTE</a>
+                </div>
+                <div class="col-lg-1 col-sm-12">
+                    <a class="linkmenu" href="#"><b>NEGOCIOS</b></a>
+                </div>
+
+                <div class="col-lg-9">
+
+                </div>
+            </div>
+
+            <div class="row"> <!-- Seccion separada -->
+                <div class="col-lg-11">
+                </div>
+                <div class="col-lg-1 col-sm-12" id="opinion">
+                    <a class="linkmenu" id="sec2" href="https://www.df.cl/opinion/columnistas">OPINIONES </a>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <main>
+        <div class="container"> 
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="row" id="reciente"> <!--Fila1 Col 1-->
+                        <div class="col">
+                            <div class="row"> <!-- fila1 de img not reciente-->
+                                <div class="col">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="categoria">StartUps:</div>
+                                            <img src="./images/negocios1.png" class="img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row"> <!-- fila1 de img not reciente-->
+                                <div class="col">
+                                    <div class="card">
+                                        <div class="card-body">
+                                        <!-- Contenido de la celda de noticia reciente -->
+                                            <div class="noticia">
+                                                <a  id="txtRec" href="https://www.latercera.com/pulso/noticia/casi-30-startups-chilenas-participaron-de-evento-latinoamericano-de-emprendimiento/ROVAHEB4CVFGLK7XT6LKYYIBCA/">
+                                                    <div class="titulo">Casi 30 startups chilenas participaron de evento latinoamericano de emprendimiento</div>
+                                                    <div class="texto">Fintech, edtch, agrotech, heathtech, biotech, y tecnologías transversales como inteligencia artificial e IoT (Internet de las cosas) son algunas de las materias de las empresas chilenas que participaron en StarCo, en Bogotá.</div>
+                                                    <hr size="2" width="80%" color="blue">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row" id="antigua-1"><!--Fila2 Col 1-->
+                        <div class="col-lg-6 col-sm-12">
+                            <div class="row"> <!-- fila2 de img not reciente-->
+                                <div class="col">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="categoria">Emprendedores:</div>
+                                            <img src="./images/negocios2.png" class="img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row"> <!-- fila2 de img not reciente-->
+                                <div class="col">
+                                    <div class="card">
+                                        <div class="card-body">
+                                        <!-- Contenido de la celda de noticia reciente -->
+                                            <div class="noticia">
+                                                <a  id="txtAnt" href="https://www.latercera.com/pulso-pm/noticia/emprendedores-en-2023-realizaran-inversiones-y-preven-aumento-de-ventas-pero-la-mayoria-descarta-realizar-contrataciones/6SKOELZIYFCRBBPT76G3SWUP3Y/">
+                                                    <div class="titulo">Emprendedores en 2023: realizarán inversiones y prevén aumento de ventas, pero la mayoría descarta realizar contrataciones</div>
+                                                    <div class="texto">Una medición de 1.200 casos, mostró que sólo el 23,7% del segmento que vende hasta 2.400 UF anual evalúa como bueno el momento de su emprendimiento. Casi en la mitad de la muestra total, se trata del único ingreso del emprendedor.</div>
+                                                    <hr size="2" width="80%" color="blue">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-12">
+                            <div class="row"> <!-- fila2 de img not reciente-->
+                                <div class="col">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="categoria">Emprendimiento:</div>
+                                            <img src="./images/negocios3.png" class="img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row"> <!-- fila2 de img not reciente-->
+                                <div class="col">
+                                    <div class="card">
+                                        <div class="card-body">
+                                        <!-- Contenido de la celda de noticia reciente -->
+                                            <div class="noticia">
+                                                <a  id="txtAnt" href="https://www.biobiochile.cl/noticias/opinion/tu-voz/2022/07/22/emprendimiento-en-chile-y-su-vinculacion-hacia-lo-digital.shtml">
+                                                    <div class="titulo">Emprendimiento en Chile y su vinculación hacia lo digital</div>
+                                                    <div class="texto">Chile se ubica en el sexto lugar entre los países con una alta tasa de emprendedores en el mundo, según el estudio “Emprendimiento en Tiempos de Pandemia”, realizado por Ipsos en 2021, que destaca que casi la mitad de los chilenos y chilenas comenzó un negocio en pandemia.</div>
+                                                    <hr size="2" width="80%" color="blue">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row" id="antigua-2"><!--Fila3 Col 1-->
+                        <div class="col-lg-6 col-sm-12">
+                            <div class="row"> <!-- fila3 de img not reciente-->
+                                <div class="col">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="categoria">Negocios:</div>
+                                            <img src="./images/negocios4.png" class="img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row"> <!-- fila3 de img not reciente-->
+                                <div class="col">
+                                    <div class="card">
+                                        <div class="card-body">
+                                        <!-- Contenido de la celda de noticia reciente -->
+                                            <div class="noticia">
+                                                <a  id="txtAnt" href="https://www.biobiochile.cl/noticias/economia/negocios-y-empresas/2023/04/20/vuelve-seller-day-encuentro-gratuito-de-falabella-com-dara-capacitacion-a-emprendedores-y-pymes.shtml">
+                                                    <div class="titulo">Vuelve ’Seller Day’: encuentro gratuito de falabella.com dará capacitación a emprendedores y Pymes</div>
+                                                    <div class="texto">El evento busca abrir puertas y brindar un espacio para que las Pymes puedan hacer crecer su negocio y potenciar sus ventas al incorporarse como vendedores del Marketplace.</div>
+                                                    <hr size="2" width="80%" color="blue">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-12">
+                            <div class="row"> <!-- fila3 de img not reciente-->
+                                <div class="col">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="categoria">Becas:</div>
+                                            <img src="./images/negocios5.png" class="img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row"> <!-- fila3 de img not reciente-->
+                                <div class="col">
+                                    <div class="card">
+                                        <div class="card-body">
+                                        <!-- Contenido de la celda de noticia reciente -->
+                                            <div class="noticia">
+                                                <a  id="txtAnt" href="https://www.biobiochile.cl/noticias/economia/negocios-y-empresas/2023/03/10/banco-santander-supera-el-millon-de-becas-entregadas-a-emprendedores-estudiantes-y-profesionales.shtml">
+                                                    <div class="titulo">Banco Santander supera el millón de becas entregadas a emprendedores, estudiantes y profesionales</div>
+                                                    <div class="texto">Solo durante 2022 más de 265.000 estudiantes, profesionales, proyectos emprendedores y pymes recibieron el apoyo del banco a través de Santander Universidades. Desde que comenzó su apuesta por la educación, el emprendimiento y la empleabilidad hace más de 25 años, Banco Santander ha destinado más de 2.200 millones de euros a estas iniciativas.</div>
+                                                    <hr size="2" width="80%" color="blue">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+</body>
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="row">
+                    <a href="#">Quiénes somos</a>
+                </div>
+                <div class="row">
+                    <a href="#">Contacto</a>
+                </div>
+                <div class="row">
+                    <a href="#">Derechos de Autor</a>
+                </div>
+                <div class="row">
+                    <a href="#">Políticas de privacidad</a>
+                </div>
+                <div class="row">
+                    <a href="#">Términos y condiciones de los servicios</a>
+                </div>
+                
+            </div>
+            <div class="col-lg-8">
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="copy">
+                    <p>&copy; 2023 Periódico El Faro. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+crossorigin="anonymous"></script>
+</html>
+
+
+

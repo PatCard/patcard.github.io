@@ -1,0 +1,135 @@
+/* Se aplica gris al color de fondo */
+body {
+    background-color: #f5f5f5;
+}
+
+#date-time {
+    text-align: end;
+    font-size: 12px;
+}
+
+.linkmenu {
+    text-decoration: none;
+    color: black;
+  }
+
+#sec1,
+#sec2 {
+    font-size: 12px;
+}
+
+#aviso {
+    text-align-last: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.container {
+    margin-bottom: 30px;
+}
+
+.card-body {
+    align-self: center;
+}
+
+.categoria,
+.titulo,
+.texto {
+    font-family:'Martel','Oswald', sans-serif;
+}
+
+#reciente,
+#antigua-1,
+#antigua-2,
+#antigua-3,
+#antigua-4 {
+    margin-bottom: 20px;
+}
+
+#reciente .categoria {
+    font-size: 18px;
+
+    color: #003399;    
+}
+
+#reciente .titulo {
+    font-size: 24px;
+    color: #003399;
+}
+
+#reciente .texto {
+    font-size: 14px;
+    color: #000000;
+}
+
+#antigua-1 .categoria,
+#antigua-2 .categoria {
+    font-size: 16px;
+    color: #003399;    
+}
+
+#antigua-1 .titulo,
+#antigua-2 .titulo,
+#antigua-3 .titulo,
+#antigua-4 .titulo {
+    font-size: 20px;
+    color: #003399;
+}
+
+#antigua-1 .texto,
+#antigua-2 .texto {
+    font-size: 14px;
+    color: #000000;
+}
+
+/*
+Se aplicar estilo de fuente en Negrita, cuando se ubica el cursor encima de cada vínculo.
+a. Además, quitar el subrayado.
+b. Mantener subrayado cuando el mouse no está encima.
+*/
+.noticia:hover {
+    background: black;
+}
+
+.noticia a:hover {
+    text-decoration: none;
+}
+
+#reciente a:hover .titulo, 
+#reciente a:hover .texto,
+#antigua-1 a:hover .titulo, 
+#antigua-1 a:hover .texto,
+#antigua-2 a:hover .titulo, 
+#antigua-2 a:hover .texto,
+#antigua-3 a:hover .titulo, 
+#antigua-3 a:hover .texto,
+#antigua-4 a:hover .titulo, 
+#antigua-4 a:hover .texto {
+    color: white;
+    font-weight: bold;
+}
+
+audio {
+    width: 225px;
+    height: 54px;
+}
+
+footer .container, footer a{
+    background: #003366;
+    color: rgb(219, 217, 217);
+    text-decoration: none;
+}
+
+/*.col-lg-1.col-sm-2#opinion{
+    background: #a3051f;
+}*/
+.col-lg-11.col-sm-10 {
+    background: white;
+}
+
+a#sec2 {
+    color: white;
+    font-weight: bold;
+    background: #a3051f;
+    padding: 4px;
+}

@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Estas líneas permiten a la página cargar una fuente específica desde la biblioteca de fuentes de Google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Martel:wght@700&display=swap" rel="stylesheet">    
+
+    <script src="./js/time.js"></script>
+    <script src="./js/aviso.js"></script>
+    <title>Periodico El Faro</title>
+    <!--Con la etiqueta link se referencia a la ubicacion del icono de la pagina web en ele navegador -->
+	<link rel="shortcut icon" href="./images/faro.ico" type="image/x-icon">	    
+    <!--Se indica al navegador la ubicacion del archivo de estilos-->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <div class="container"> <!-- Header -->
+            <div class="row"> <!-- Fecha y hora -->
+                <div class="col">
+                    <div id="date-time"></div>
+                </div>
+            </div>
+
+            <div class="row"> <!-- Logo -->
+                <div class="col-4">
+
+                </div>
+                <div class="col-4">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="./images/logo-faro2.png" alt="Logo del periódico" style="max-width: 100%;">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-4">
+
+                </div>
+            </div>
+
+            <div class="row"> <!-- Aviso -->
+                <div class="col" id="aviso">
+                    <img src="./images/aviso1.png" alt="Aviso" style="max-width: 100%;" id="aviso-img">
+                </div>
+            </div>
+
+            <div class="row"> <!-- Menu -->
+                <div class="col-lg-1 col-sm-12">
+                    <a class="linkmenu" href="./index.html">INICIO</a>
+                </div>
+                <div class="col-lg-1 col-sm-12">
+                    <a class="linkmenu" href="#"><b>DEPORTE</b></a>
+                </div>
+                <div class="col-lg-1 col-sm-12">
+                    <a class="linkmenu" href="negocios.html">NEGOCIOS</a>
+                </div>
+
+                <div class="col-lg-9">
+
+                </div>
+            </div>
+
+            <div class="row"> <!-- Seccion separada -->
+                <div class="col-lg-11">
+                </div>
+                <div class="col-lg-1 col-sm-12" id="opinion">
+                    <a class="linkmenu" id="sec2" href="https://www.df.cl/opinion/columnistas">OPINIONES </a>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <main>
+        <div class="container"> 
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="row" id="reciente"> <!--Fila1 Col 1-->
+                        <div class="col">
+                            <div class="row"> <!-- fila1 de img not reciente-->
+                                <div class="col">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="categoria">Fútbol:</div>
+                                            <img src="./images/deporte1.png" class="img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row"> <!-- fila1 de img not reciente-->
+                                <div class="col">
+                                    <div class="card">
+                                        <div class="card-body">
+                                        <!-- Contenido de la celda de noticia reciente -->
+                                            <div class="noticia">
+                                                <a  id="txtRec" href="https://www.latercera.com/el-deportivo/noticia/en-francia-revelan-los-sueldos-de-la-ligue-1-mbappe-lidera-la-lista-y-alexis-sanchez-se-ubica-en-el-top-15/Y7YIZYWUNZG55MHB54XEA3VYCQ/">
+                                                    <div class="titulo">En Francia revelan los sueldos de la Ligue 1: Mbappé lidera la lista y Alexis Sánchez se ubica en el top 15</div>
+                                                    <div class="texto">El prestigioso diario galo L'Equipe dio a conocer los salarios top de la liga francesa. El ranking es dominado por el PSG, quienes ocupan los diez primeros lugares del listado. El tocopillano, por su parte, es el segundo mejor pagado del Olympique de Marsella.</div>
+                                                    <hr size="2" width="80%" color="blue">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row" id="antigua-1"><!--Fila2 Col 1-->
+                        <div class="col-lg-6 col-sm-12">
+                            <div class="row"> <!-- fila2 de img not reciente-->
+                                <div class="col">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="categoria">Ciclismo:</div>
+                                            <img src="./images/deporte2.png" class="img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row"> <!-- fila2 de img not reciente-->
+                                <div class="col">
+                                    <div class="card">
+                                        <div class="card-body">
+                                        <!-- Contenido de la celda de noticia reciente -->
+                                            <div class="noticia">
+                                                <a  id="txtAnt" href="https://www.biobiochile.cl/noticias/deportes/mas-deportes/2023/03/28/con-un-chileno-en-el-podio-en-mexico-se-bajo-el-telon-a-la-serie-red-bull-cerro-abajo.shtml">
+                                                    <div class="titulo">Con un chileno en el podio: en México se bajó el telón a la serie Red Bull Cerro Abajo</div>
+                                                    <div class="texto">n México, específicamente en Guanajuato, se puso fin a la serie Red Bull Cerro Abajo en Latinoamérica.</div>
+                                                    <hr size="2" width="80%" color="blue">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-12">
+                            <div class="row"> <!-- fila2 de img not reciente-->
+                                <div class="col">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="categoria">Atletismo:</div>
+                                            <img src="./images/deporte3.png" class="img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row"> <!-- fila2 de img not reciente-->
+                                <div class="col">
+                                    <div class="card">
+                                        <div class="card-body">
+                                        <!-- Contenido de la celda de noticia reciente -->
+                                            <div class="noticia">
+                                                <a  id="txtAnt" href="https://www.biobiochile.cl/noticias/deportes/mas-deportes/2023/03/29/el-japones-de-92-anos-que-enamora-al-atletismo-corrio-60-metros-en-10-95-segundos-y-gano-oro-mundial.shtml">
+                                                    <div class="titulo">El japonés de 92 años que enamora al atletismo: corrió 60 metros en 10.95 segundos y ganó oro Mundial</div>
+                                                    <div class="texto">Un japonés de 92 años es la gran figura del atletismo a nivel plantario tras difundirse un video de su extraordinaria participación en el Mundial Másters de Polonia.,</div>
+                                                    <hr size="2" width="80%" color="blue">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row" id="antigua-2"><!--Fila3 Col 1-->
+                        <div class="col-lg-6 col-sm-12">
+                            <div class="row"> <!-- fila3 de img not reciente-->
+                                <div class="col">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="categoria">Básquetbol:</div>
+                                            <img src="./images/deporte4.png" class="img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row"> <!-- fila3 de img not reciente-->
+                                <div class="col">
+                                    <div class="card">
+                                        <div class="card-body">
+                                        <!-- Contenido de la celda de noticia reciente -->
+                                            <div class="noticia">
+                                                <a  id="txtAnt" href="https://www.biobiochile.cl/noticias/deportes/basquetbol/2023/04/26/resumen-nba-playoffs-celtics-hawks-nuggets-wolves-suns-clippers.shtml">
+                                                    <div class="titulo">Trae Young alarga llave de Hawks y Celtics en Playoffs de la NBA: Suns y Nuggets avanzaron a ’semis’</div>
+                                                    <div class="texto">Los Hawks prolongaron la llave de Playoffs de NBA ante los Celtics, mientras los Suns despacharon a Clippers y los Nuggets eliminaron a los Wolves</div>
+                                                    <hr size="2" width="80%" color="blue">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-12">
+                            <div class="row"> <!-- fila3 de img not reciente-->
+                                <div class="col">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="categoria">Fútboll:</div>
+                                            <img src="./images/deporte5.png" class="img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row"> <!-- fila3 de img not reciente-->
+                                <div class="col">
+                                    <div class="card">
+                                        <div class="card-body">
+                                        <!-- Contenido de la celda de noticia reciente -->
+                                            <div class="noticia">
+                                                <a  id="txtAnt" href="https://www.biobiochile.cl/noticias/deportes/futbol-internacional/notas-futbol-internacional/2023/04/26/ya-recibimos-a-la-conmebol-la-region-chilena-que-se-ilusiona-con-sede-de-copa-libertadores-sub-20.shtml">
+                                                    <div class="titulo">"Ya recibimos a la Conmebol": la región chilena que se ilusiona con sede de Copa Libertadores Sub-20</div>
+                                                    <div class="texto">Expectantes ante la opción de adjudicarse la localía de la VII edición de la Copa Libertadores Sub 20 Chile 2023, se mostraron en las administraciones municipales de las comunas de Coquimbo y La Serena.
+
+                                                        Personeros de la Conmebol, cumplieron la pasada semana con una visita inspectiva a los principales estadios de la zona, como también a los campos de entrenamiento y hotelería que disponen las provincias de Elqui y Limarí para cobijar el torneo continental.</div>
+                                                    <hr size="2" width="80%" color="blue">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+</body>
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="row">
+                    <a href="#">Quiénes somos</a>
+                </div>
+                <div class="row">
+                    <a href="#">Contacto</a>
+                </div>
+                <div class="row">
+                    <a href="#">Derechos de Autor</a>
+                </div>
+                <div class="row">
+                    <a href="#">Políticas de privacidad</a>
+                </div>
+                <div class="row">
+                    <a href="#">Términos y condiciones de los servicios</a>
+                </div>
+                
+            </div>
+            <div class="col-lg-8">
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="copy">
+                    <p>&copy; 2023 Periódico El Faro. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+crossorigin="anonymous"></script>
+</html>
+
+
+
